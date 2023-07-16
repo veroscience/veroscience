@@ -17,6 +17,14 @@ Looking for a full-time Data Scientist/Analyst position in the UK.
 - [Predicting the number of Flu cases using Time Series analysis](https://medium.com/@veronikanur/predicting-the-number-of-flu-cases-using-time-series-analysis-b7dd9c7769b7)
 - [Startup investments 2012–2019 visualization and analysis](https://medium.com/@veronikanur/startup-investments-2012-2019-visualization-and-analysis-ea24fb668e4e)
 
+### Languages and Tools
+- ![Python](https://img.shields.io/badge/-Python-blue)
+- ![VBA](https://img.shields.io/badge/-VBA-blueviolet)
+- ![R](https://img.shields.io/badge/-R-orange)
+- ![JavaScript](https://img.shields.io/badge/-JavaScript-yellow)
+- ![Tableau](https://img.shields.io/badge/-Tableau-9cf)
+- ![SQL](https://img.shields.io/badge/-SQL-ff69b4)
+- ![Git](https://img.shields.io/badge/-Git-red)
 <!--
 **veroscience/veroscience** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
