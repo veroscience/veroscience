@@ -6,7 +6,7 @@ Looking for a full-time Data Scientist/Analyst position in the UK.
 
 ### Featured projects
 - [Global Terrorism 1970-2020 Visualization Tool and Analysis](https://veroscience.github.io/global-terrorism-map/index.html)
-- [International Product Trade Visualziation 2003-2022] (https://veroscience.github.io/global_trade_map/index.html)
+- [International Product Trade Visualziation 2003-2022]. (https://veroscience.github.io/global_trade_map/index.html)
 - [Startup Ecosystem Visualization Tool and Analysis](https://veroscience.github.io/crunchbase-investment/)
 - [UK Secondary Schools Visualization Tool](https://veroscience.github.io/uk-secondary-schools/)
 
