@@ -1,0 +1,9 @@
+﻿school-map-app/
+  ├── frontend/
+  │     ├── index.html
+  │     └── app.js
+  ├── backend/
+  │     ├── app.py
+  │     └── school_info.csv
+  ├── venv/
+  └── requirements.txt

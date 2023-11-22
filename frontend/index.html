@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UK Schools Map App</title>
+	
+	 <!-- Link to your custom CSS file for styling -->
+   <link rel="stylesheet" href="style.css"> <!-- Replace 'style.css' with the actual path to your CSS file -->
+
+   
+	<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+	<script src="https://unpkg.com/leaflet.markercluster@1.5.0/dist/leaflet.markercluster.js"></script>
+	
+	<link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder@1.13.0/dist/Control.Geocoder.css" />
+	<script src="https://unpkg.com/leaflet-control-geocoder@1.13.0/dist/Control.Geocoder.js"></script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://d3js.org/d3.v7.min.js"></script>
+<script src="popup.js"></script>
+
+</head>
+<body>
+
+    <header>
+        <h1 >Welcome to the UK Schools Map</h1>
+        <nav>
+            <a href="#" id="about-link" onclick="popup_info('about')" >About</a>
+            <a href="#" id="source-link" onclick="popup_info('source')">Source</a>
+        </nav>
+    </header>
+
+    <div id="about_info" class="popup_window" >
+        <button type='button' class="down-button" onclick="close_info(this)"><i class="fa-solid fa-rectangle-xmark"></i></button> 
+              <p> </p> 
+        <h2>About the School Map App</h2>
+              <p>
+                  The School Map App provides information about schools in the UK based on data available for 2022.
+                  You can explore general information and performance details of schools across the country.
+              </p>
+      </div>
+
+      <div id="source_info" class="popup_window" >
+        <button type='button' class="down-button" onclick="close_info(this)"><i class="fa-solid fa-rectangle-xmark"></i></button> 
+              <p> </p> 
+              <h2>Data Source</h2>
+              <p>
+                  The data used in this application is sourced from the <a href="https://www.gov.uk/school-performance-tables" target="_blank" rel="noopener noreferrer">UK Government School Performance Tables</a> for 2022.
+              </p>
+      </div>
+
+
+<div class="container">
+<div id="menu-section" class="left">
+
+            <div class="menu-icons">
+                <i class="fas fa-info-circle" id="school-info-icon"></i> <!-- FontAwesome school icon -->              
+                <i class="fas fa-filter" id="filter-icon"></i> <!-- FontAwesome filter icon -->
+            </div>
+
+
+      <!-- Content div for School Info -->
+      <div id="school-info-content" style="display: none; margin-top: 10px;">
+          <!-- Add school info content here -->
+
+          <div class="menu-section-header">
+            <h2>School</h2>
+            <i class="fas fa-chevron-down toggle-section-icon" data-target="school"></i>
+        </div>
+        <div class="menu-section" id="school">
+            <!-- Content for the School section goes here -->
+        </div>
+    
+        <!-- Students Section -->
+        <div class="menu-section-header">
+            <h2>Students</h2>
+            <i class="fas fa-chevron-down toggle-section-icon" data-target="students"></i>
+        </div>
+        <div class="menu-section" id="students">
+            <!-- Content for the Students section goes here -->
+        </div>
+    
+        <!-- Performance Section -->
+        <div class="menu-section-header">
+            <h2>Primary School Performance</h2>
+            <i class="fas fa-chevron-down toggle-section-icon" data-target="ks2"></i>
+        </div>
+        <div class="menu-section" id="ks2">
+            <!-- Content for the Performance section goes here -->
+        </div>
+
+        <div class="menu-section-header">
+            <h2>GCSE Performance</h2>
+            <i class="fas fa-chevron-down toggle-section-icon" data-target="ks4"></i>
+        </div>
+        <div class="menu-section" id="ks4">
+            <!-- Content for the Performance section goes here -->
+        </div>
+
+        <div class="menu-section-header">
+            <h2>A-level Performance</h2>
+            <i class="fas fa-chevron-down toggle-section-icon" data-target="ks5"></i>
+        </div>
+        <div class="menu-section" id="ks5">
+            <!-- Content for the Performance section goes here -->
+        </div>
+        
+      </div>
+
+          <!-- Content div for Filtering -->
+          <div id="filtering-content">
+
+<div id="filter-section" class="section">
+<div class="section-header">
+ <h2>Filters</h2>
+   <button class="add-filter-btn" id="add-filter-button">Add Filter</button>
+   </div>
+   
+
+    <div id="filter-dropdown-container"></div> <!-- Container for filter dropdowns -->
+  </div>
+</div>
+</div>
+
+<div class="right">
+<div id="search-box-container" ></div>
+    <div id="map"></div>
+</div>	
+</div>
+
+
+    <footer>
+
+        <div id="copyright">
+            <p>&copy; 2023 School Map App. All rights reserved.</p>
+        </div>
+    </footer>
+	
+    <script src="app.js"></script>
+</body>
+</html>
