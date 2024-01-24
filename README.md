@@ -2,7 +2,6 @@
 I'm a Business and Data Consultant, with 10+ experience in Management Consulting and 5+ experience in Data Science.
 Passionate about finding solutions for business and social problems using data, and data visualization.
 
-Looking for a full-time Data Scientist/Analyst position in the UK.
 
 ### Featured projects
 - [Global Terrorism 1970-2020 Visualization Tool and Analysis](https://veroscience.github.io/global-terrorism-map/index.html)
